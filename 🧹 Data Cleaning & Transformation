@@ -1,0 +1,30 @@
+Used Excel and Power Query for Data Cleaning & Transformation
+-------------------------------------------------------------
+
+1. Handled Missing Categories
+Derived missing Category values using Product ID naming conventions
+Example:
+FUR-BO-10002202 → Category = Furniture
+
+2. Handled Missing Sub-Categories
+Identified sub-categories using Product ID patterns
+Example:
+%-BO-% → Sub-Category = Bookcases
+
+3. Duplicate Handling
+Duplicate Product Names were retained (descriptive attribute)
+Duplicate Product IDs were removed to enforce a valid business key
+
+4. Returns Integration
+Returns table contained only Order IDs with no additional attributes
+Merged with Orders using a Left Join to create a Returned Flag
+Simplified downstream calculations and model complexity
+
+5. Date Table Creation
+Created a custom Date table using DAX
+Enabled time intelligence (YoY, MoM, Rolling 12 Months)
+Assumed Fiscal Year End = December
+
+6. Standardization
+Standardized column names, data types, formats, and summarization
+Set appropriate data categories (Date, Geography, Numeric measures)
