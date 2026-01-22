@@ -1,0 +1,19 @@
+🧩 Data Modeling Approach
+
+1. Star Schema Design : Implemented a star schema for performance and clarity
+2. Fact table at order-item grain; Separate dimension tables for Date, Product, Customer, and Geography
+
+3. Product Dimension Handling
+Created a deduplicated Product dimension in Power Query
+Ensured one-to-many relationship between Product and Orders
+
+4. Returns Modeling Decision
+For this portfolio:
+Returns were merged into Orders to create a Returned Flag
+
+Rationale:
+Given the small dataset and limited return attributes, merging simplified the model, improved performance, and maintained a clean star schema.
+In a production-scale model, Returns would be handled as a separate fact table with DAX-based net calculations.
+
+5. Filtering Strategy: Used single-direction filtering from dimensions → fact
+Followed Power BI best practices for performance and time intelligence
