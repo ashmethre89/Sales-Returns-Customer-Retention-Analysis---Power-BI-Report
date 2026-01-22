@@ -17,3 +17,20 @@ In a production-scale model, Returns would be handled as a separate fact table w
 
 5. Filtering Strategy: Used single-direction filtering from dimensions → fact
 Followed Power BI best practices for performance and time intelligence
+
+📐 KPI Definitions
+Sales & Profitability
+Gross Sales: Total sales before returns
+Net Sales: Gross Sales – Sales from returned orders
+Profit Margin %: Profit ÷ Net Sales
+Returns
+Return Rate: Returned Orders ÷ Total Orders
+Return Cost %: Cost impact of returns relative to sales
+Customer Metrics
+Retention Rate: % of customers who made repeat purchases
+Attrition (Churn) Rate: % of customers who did not return
+Loyal Customer: Customer with 3 or more distinct orders
+Time Intelligence
+Year-over-Year (YoY) Growth
+Monthly Trends
+Rolling 12-Month Performance
